@@ -24,9 +24,9 @@ interface Configuration extends BuildOptions {
 
 const DEFAULT_BUILD_OPTIONS: Partial<Configuration> = {
   bundle: true,
-  target: 'es2017',
+  target: 'es2019',
   external: ['aws-sdk'],
-  packager: 'npm',
+  packager: 'yarn',
 };
 
 export class EsbuildPlugin implements Plugin {
